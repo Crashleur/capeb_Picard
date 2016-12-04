@@ -1,0 +1,145 @@
+@charset "UTF-8";
+// Variable
+@import "../bootstrap-lib/bootstrap/variables";
+@import "compass";
+
+//My theme variables
+@import "variables";
+
+// Load and hook Bootstrap Core
+@import "../bootstrap-lib/bootstrap/";
+
+//My theme variables
+@import "flaticon";
+
+$color : white !default;
+$colorHover : grey !default;
+$colorText : #333333 !default;
+
+body {
+  background: url("https://i.imgsafe.org/422d9be19d.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+p{
+  font-size: 150%;
+}
+
+#green{
+  color: #36622f;
+  font-weight: bold;
+}
+#yellow{
+  color: #b4a730;
+  font-weight: bold;
+}
+#pink{
+  color: #8e0055;
+  font-weight: bold;
+}
+
+header {
+  color: white;
+  font-weight: bold;
+  padding: 3% 10%;
+}
+header .logo img {
+  width: 50%;
+  padding-top: 30%;
+  margin-bottom: 4%;
+}
+header #dl img {
+  width: 100%;
+}
+
+#dl{
+  margin-top: 5%;
+}
+
+#desc img{
+  width: 70%;
+}
+#form {
+  background: $color;
+  color: $colorText;
+  padding: 6%;
+  text-align: center;
+  margin-top: 10%;
+}
+#form p {
+  text-align: center;
+}
+
+#mail {
+  border: solid 2px black;
+}
+
+#recevoir {
+  background: black;
+  color: white;
+}
+#recevoir:hover{
+  background: rgba(#000000, 0.84);
+}
+
+#partager {
+  background: url("https://i.imgsafe.org/422d9a078f.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#partager {
+  padding: 3%;
+}
+#partager .glyph-icon {
+  color: white;
+  font-size: 450%;
+}
+#partager div {
+  text-align: center;
+}
+#partager .glyph-icon:hover {
+  color: $colorHover;
+}
+
+
+footer {
+  background: black;
+  padding: 2%;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 25px !important;
+}
+footer span{
+  color: #A9A9A9;
+}
+
+@media screen and (max-width: 768px) {
+  p{
+    font-size: 70%;
+  }
+  body {
+    background: url("https://i.imgsafe.org/422d9dbab8.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header .logo img {
+    width: 70%;
+    padding-top: 15%;
+  }
+  header{
+    text-align: center;
+    font-size: 15px;
+  }
+  header #dl img {
+    width: 75%;
+  }
+  #desc{
+    text-align: center;
+    margin-top: 10%;
+  }
+}
